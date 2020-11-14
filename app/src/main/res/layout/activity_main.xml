@@ -7,24 +7,38 @@
     android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
-    <Button
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="vertical"
+       android:layout_marginLeft="120dp"
 
-        android:id="@+id/buttonOpening"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="50dp"
-        android:text="Opening"
-        android:background="@android:color/black"
-        android:textColorLink="#FFFFFF" />
+       >
+       <Button
+           android:id="@+id/buttonOpening"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="50dp"
+           android:background="@android:color/black"
+           android:text="Opening"
+           android:textColor="@color/white"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           />
 
-    <Button
-        android:id="@+id/buttonStories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="130dp"
-        android:text="Stories"
-        />
+       <Button
+           android:id="@+id/buttonStories"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="50dp"
+           android:background="@android:color/white"
+           android:text="Stories"
+           android:textColor="@color/black"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           />
+
+   </LinearLayout>
 
 </LinearLayout>
